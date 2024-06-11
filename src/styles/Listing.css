@@ -1,0 +1,12 @@
+.listing {
+  max-width: 300px;
+  background-color: #eee;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listing > img {
+  background-color: red;
+}
