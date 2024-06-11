@@ -6,6 +6,13 @@ function Shop() {
       <h1>Shop</h1>
       <div className="listings">
         <Listing></Listing>
+        <Listing></Listing>
+        <Listing></Listing>
+        <Listing></Listing>
+        <Listing></Listing>
+        <Listing></Listing>
+        <Listing></Listing>
+        <Listing></Listing>
       </div>
     </div>
   );
