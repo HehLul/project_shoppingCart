@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "../styles/Listing.css";
+import AddToCart from "./AddToCart";
 const Listing = (props) => {
   return (
     <div className="listing">
@@ -7,6 +8,7 @@ const Listing = (props) => {
       <h3>{props.title}</h3>
       <p>{props.description}</p>
       <p>${props.price}</p>
+      <AddToCart />
     </div>
   );
 };

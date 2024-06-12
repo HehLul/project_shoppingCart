@@ -1,0 +1,25 @@
+.addToCart {
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+  gap: 10px;
+}
+
+.addToCart > .input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-height: 20px;
+  gap: 10px;
+}
+.addToCart > .input > input {
+  max-width: 70%;
+  text-align: center;
+}
+.addToCart > .input > button {
+  display: flex;
+  text-align: center;
+  padding: 3px;
+  align-items: center;
+  border-radius: 0;
+}
