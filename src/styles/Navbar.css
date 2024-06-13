@@ -2,11 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: sticky;
+  top: 0; /* Adjust this value as needed */
+  background-color: white; /* Optional: Ensure the background is solid when scrolling */
+  z-index: 1000; /* Optional: Ensure the navbar stays above other elements */
+  padding: 10px 0; /* Optional: Add padding to make the navbar more prominent */
 }
+
 ul {
   display: flex;
   gap: 20px;
   list-style: none;
   text-decoration: none;
   align-items: center;
+}
+
+.cartQuantity {
+  margin-left: -20px;
 }

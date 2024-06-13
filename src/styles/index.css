@@ -25,10 +25,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  /* place-items: center; */
+  flex-direction: column;
   min-width: 320px;
-  min-height: 80vh;
-  justify-content: center;
+  min-height: 100vh; /* Ensure full viewport height */
 }
 
 h1 {

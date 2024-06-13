@@ -12,8 +12,7 @@ function Navbar({ cartQuantity }) {
           <Link to="shop">Shop</Link>
         </li>
         <li>
-          {/* <Link to="cart">Cart</Link> */}
-          <img src="" alt="" />
+          <img width="35px" src="src/assets/shopping-cart.png" alt="cart" />
         </li>
         <p className="cartQuantity">{cartQuantity}</p>
       </ul>
