@@ -12,6 +12,10 @@ function AddToCart() {
       setQuantity((prev) => prev - 1);
     }
   };
+
+  const handleQuantityChange = () => {
+    console.log("quantity->" + quantity);
+  };
   return (
     <div className="addToCart">
       <div className="input">
@@ -20,7 +24,9 @@ function AddToCart() {
         <button onClick={handleIncrease}>+</button>
       </div>
 
-      <button type="submit">Add</button>
+      <button type="submit" onClick={handleQuantityChange}>
+        Add
+      </button>
     </div>
   );
 }

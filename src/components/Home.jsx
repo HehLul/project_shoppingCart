@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import "../styles/Home.css";
-function Home() {
+function Home({ cartQuantity }) {
   return (
     <div className="content">
-      <Navbar></Navbar>
+      <Navbar cartQuantity={cartQuantity}></Navbar>
       <div className="home">
         <h1>InsaneTech</h1>
         <h2>Buy the latest and coolest tech in the world!</h2>
