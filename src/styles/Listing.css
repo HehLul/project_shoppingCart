@@ -1,10 +1,24 @@
 .listing {
   max-width: 300px;
-  background-color: #eee;
-  min-height: 500px;
+  background-color: white;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 20px;
+}
+img {
+  max-height: 300px;
+  max-width: 250px;
+}
+
+.description {
+  font-size: 0.9rem;
+}
+.listingContent {
+  margin-top: auto;
+  /* align-items: center; */
+  /* justify-content: center; */
 }

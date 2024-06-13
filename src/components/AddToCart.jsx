@@ -13,16 +13,16 @@ function AddToCart({ handleAddToCart }) {
     }
   };
 
-  // const handleInputChange = (e) => {
-  //   const { value } = e.target;
-  //   setQuantity(value);
-  //   console.log("quantity->" + quantity);
-  // };
+  const handleInputChange = (e) => {
+    const { value } = e.target;
+    setQuantity(value);
+    console.log("quantity->" + quantity);
+  };
   return (
     <div className="addToCart">
       <div className="input">
         <button onClick={handleDecrease}>-</button>
-        <input type="text" value={quantity} />
+        <input type="text" value={quantity} onChange={handleInputChange} />
         <button onClick={handleIncrease}>+</button>
       </div>
 

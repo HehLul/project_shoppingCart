@@ -4,10 +4,12 @@ import AddToCart from "./AddToCart";
 const Listing = (props) => {
   return (
     <div className="listing">
-      <img src={props.imageURL} alt="listing image" />
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
-      <p>${props.price}</p>
+      <div className="listingContent">
+        <img src={props.image} alt="listing image" />
+        <h3>{props.title}</h3>
+        <p className="description">{props.description}</p>
+        <p>${props.price}</p>
+      </div>
       <AddToCart handleAddToCart={props.handleAddToCart} />
     </div>
   );

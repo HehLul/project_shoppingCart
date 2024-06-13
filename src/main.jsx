@@ -10,7 +10,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const App = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
   const handleAddToCart = (quantity) => {
-    setCartQuantity((prev) => prev + quantity);
+    const quantityVal = parseInt(quantity);
+    setCartQuantity((prev) => prev + quantityVal);
   };
   const router = createBrowserRouter([
     {
