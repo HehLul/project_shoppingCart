@@ -1,21 +1,21 @@
 import Listing from "./Listing";
 import Navbar from "./Navbar";
 import "../styles/Shop.css";
-function Shop({ cartQuantity, setCartQuantity }) {
+function Shop({ cartQuantity, setCartQuantity, handleAddToCart }) {
   return (
     <div className="content">
       <Navbar cartQuantity={cartQuantity}></Navbar>
       <div className="shop">
         <h1>Shop</h1>
         <div className="listings">
-          <Listing></Listing>
-          <Listing></Listing>
-          <Listing></Listing>
-          <Listing></Listing>
-          <Listing></Listing>
-          <Listing></Listing>
-          <Listing></Listing>
-          <Listing></Listing>
+          <Listing handleAddToCart={handleAddToCart}></Listing>
+          <Listing handleAddToCart={handleAddToCart}></Listing>
+          <Listing handleAddToCart={handleAddToCart}></Listing>
+          <Listing handleAddToCart={handleAddToCart}></Listing>
+          <Listing handleAddToCart={handleAddToCart}></Listing>
+          <Listing handleAddToCart={handleAddToCart}></Listing>
+          <Listing handleAddToCart={handleAddToCart}></Listing>
+          <Listing handleAddToCart={handleAddToCart}></Listing>
         </div>
       </div>
     </div>

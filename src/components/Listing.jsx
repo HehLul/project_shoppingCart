@@ -8,7 +8,7 @@ const Listing = (props) => {
       <h3>{props.title}</h3>
       <p>{props.description}</p>
       <p>${props.price}</p>
-      <AddToCart />
+      <AddToCart handleAddToCart={props.handleAddToCart} />
     </div>
   );
 };

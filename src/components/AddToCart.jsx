@@ -1,6 +1,6 @@
 import "../styles/AddToCart.css";
 import { useState } from "react";
-function AddToCart() {
+function AddToCart({ handleAddToCart }) {
   const [quantity, setQuantity] = useState(1);
   const handleIncrease = () => {
     setQuantity((prev) => prev + 1);
@@ -13,9 +13,11 @@ function AddToCart() {
     }
   };
 
-  const handleQuantityChange = () => {
-    console.log("quantity->" + quantity);
-  };
+  // const handleInputChange = (e) => {
+  //   const { value } = e.target;
+  //   setQuantity(value);
+  //   console.log("quantity->" + quantity);
+  // };
   return (
     <div className="addToCart">
       <div className="input">
@@ -24,7 +26,7 @@ function AddToCart() {
         <button onClick={handleIncrease}>+</button>
       </div>
 
-      <button type="submit" onClick={handleQuantityChange}>
+      <button type="submit" onClick={() => handleAddToCart(quantity)}>
         Add
       </button>
     </div>

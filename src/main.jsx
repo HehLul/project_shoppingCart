@@ -8,8 +8,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Create a component to hold state and pass it to the routes
 const App = () => {
-  const [cartQuantity, setCartQuantity] = useState(321);
-
+  const [cartQuantity, setCartQuantity] = useState(0);
+  const handleAddToCart = (quantity) => {
+    setCartQuantity((prev) => prev + quantity);
+  };
   const router = createBrowserRouter([
     {
       path: "/",
@@ -19,7 +21,11 @@ const App = () => {
     {
       path: "shop",
       element: (
-        <Shop cartQuantity={cartQuantity} setCartQuantity={setCartQuantity} />
+        <Shop
+          cartQuantity={cartQuantity}
+          setCartQuantity={setCartQuantity}
+          handleAddToCart={handleAddToCart}
+        />
       ),
     },
   ]);
